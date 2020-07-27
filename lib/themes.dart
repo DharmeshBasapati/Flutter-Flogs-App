@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+final setLightTheme = _buildLightTheme();
+final setDarkTheme = _buildDarkTheme();
+
+ThemeData _buildLightTheme() {
+  return ThemeData(
+    primarySwatch: Colors.green,
+    primaryColor: Colors.white,
+    brightness: Brightness.light,
+    backgroundColor: const Color(0xFFE5E5E5),
+    accentColor: Colors.green,
+    bottomAppBarColor: const Color(0xFFE5E5E5),
+    cardColor: Colors.black87,
+    accentIconTheme: IconThemeData(color: Colors.white),
+    dividerColor: Colors.white54,
+  );
+}
+
+ThemeData _buildDarkTheme() {
+  return ThemeData(
+    primarySwatch: Colors.grey,
+    primaryColor: Colors.black,
+    brightness: Brightness.dark,
+    backgroundColor: const Color(0xFF212121),
+    accentColor: Colors.white,
+    cardColor: Colors.white,
+    bottomAppBarColor: const Color(0xFF212121),
+    accentIconTheme: IconThemeData(color: Colors.black),
+    dividerColor: Colors.black12,
+  );
+}
