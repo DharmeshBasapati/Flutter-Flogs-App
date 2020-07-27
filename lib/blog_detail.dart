@@ -57,10 +57,7 @@ class BlogDetail extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold,
-                                    color: Theme.of(context)
-                                        .textTheme
-                                        .headline1
-                                        .color),
+                                    color: Theme.of(context).backgroundColor),
                               ),
                               SizedBox(
                                 height: 4,
@@ -68,10 +65,7 @@ class BlogDetail extends StatelessWidget {
                               Text(
                                 'By Dharmesh Basapati',
                                 style: TextStyle(
-                                    color: Theme.of(context)
-                                        .textTheme
-                                        .headline1
-                                        .color,
+                                    color: Theme.of(context).backgroundColor,
                                     fontSize: 14,
                                     fontWeight: FontWeight.normal),
                               ),
@@ -85,10 +79,8 @@ class BlogDetail extends StatelessWidget {
                               padding: EdgeInsets.all(15),
                               child: CircleAvatar(
                                   radius: 37,
-                                  backgroundColor: Theme.of(context)
-                                      .textTheme
-                                      .headline1
-                                      .color),
+                                  backgroundColor:
+                                      Theme.of(context).backgroundColor),
                             ),
                             Container(
                               padding: EdgeInsets.all(15),
@@ -110,7 +102,7 @@ class BlogDetail extends StatelessWidget {
                         blogData.blogContent,
                         textAlign: TextAlign.justify,
                         style: TextStyle(
-                            color: Theme.of(context).textTheme.headline1.color,
+                            color: Theme.of(context).backgroundColor,
                             fontWeight: FontWeight.normal,
                             fontSize: 15),
                       ),

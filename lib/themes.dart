@@ -12,6 +12,9 @@ ThemeData _buildLightTheme() {
     accentColor: Colors.green,
     bottomAppBarColor: const Color(0xFFE5E5E5),
     cardColor: Colors.black87,
+    textTheme: TextTheme(
+        headline6: TextStyle(color: Colors.white, fontSize: 12),
+        headline3: TextStyle(color: Colors.white, fontSize: 12)),
     accentIconTheme: IconThemeData(color: Colors.white),
     dividerColor: Colors.white54,
   );
@@ -26,6 +29,9 @@ ThemeData _buildDarkTheme() {
     accentColor: Colors.white,
     cardColor: Colors.white,
     bottomAppBarColor: const Color(0xFF212121),
+    textTheme: TextTheme(
+        headline6: TextStyle(color: Colors.grey, fontSize: 12),
+        headline3: TextStyle(color: Colors.grey, fontSize: 12)),
     accentIconTheme: IconThemeData(color: Colors.black),
     dividerColor: Colors.black12,
   );
