@@ -70,7 +70,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.person), title: Text('Profile'))
         ],
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: ListView(
           children: <Widget>[
             DrawerHeader(
