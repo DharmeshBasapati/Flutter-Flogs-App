@@ -211,9 +211,12 @@ class _MyProfileState extends State<MyProfile> {
                                   fontWeight: FontWeight.normal,
                                   fontSize: 20),
                               decoration: InputDecoration(
-                                icon: Icon(
-                                  Icons.lock,
-                                  color: Colors.black87,
+                                icon: RotatedBox(
+                                  quarterTurns: 2,
+                                  child: Icon(
+                                    Icons.lock,
+                                    color: Colors.black87,
+                                  ),
                                 ),
                                 enabledBorder: InputBorder.none,
                                 focusedBorder: InputBorder.none,
