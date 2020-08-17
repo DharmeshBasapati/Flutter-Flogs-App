@@ -67,10 +67,10 @@ class _HomePageState extends State<HomePage> {
             title: Text('Categories'),
           ),
           new BottomNavigationBarItem(
-              icon: Icon(Icons.person), title: Text('Profile'))
+              icon: Icon(Icons.person), title: Text('My Profile'))
         ],
       ),
-      endDrawer: Drawer(
+      drawer: Drawer(
         child: ListView(
           children: <Widget>[
             DrawerHeader(
